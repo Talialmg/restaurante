@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO - Formulario de Contacto</title>
+    <link rel="stylesheet" href="CSS/Style_5.css"> 
+    <script src="JS/Cto_1.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="CSS/icono_restaurante.png" alt="Logo del Restaurante">
+        <ul class="menu">
+            <li><a href="INICIO.html">INICIO</a></li>
+            <li><a href="ACERCA DE.html">ACERCA DE</a></li> 
+            <li class="dropdown">
+                <a href="#" class="dropbtn">MENÚ</a>
+                <div class="dropdown-content">
+                    <a href="MENU.html">DESAYUNOS Y ENTRADAS</a> 
+                    <a href="MENU_2.html">PLATOS PRINCIPALES</a> 
+                    <a href="MENU_3.html">CENA</a>
+                    <a href="MENU_4.html">CAFÉ Y BEBIDAS</a> 
+                </div>
+            </li>
+            <li><a href="CHEFS.html">CHEFS</a></li> 
+            <li class="dropdown">
+                <a href="#" class="dropbtn">CONTACTO</a>
+                <div class="dropdown-content">
+                    <a href="CONTACTO_1.html">FORMULARIO DE CONTACTO</a>
+                    <a href="CONTACTO_2.html">FORMULARIO DE RESERVA</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <h1>Formulario de Contacto</h1>
+    <div class="container">
+        <form action="Proceso_FormularioContacto.php" method="post" onsubmit="enviarMensaje(event)">
+            <input type="text" id="nombre" name="nombre" placeholder="NOMBRE" required><br>
+            <input type="email" id="email" name="email" placeholder="CORREO ELECTRONICO" required><br> 
+            <textarea id="mensaje" name="mensaje" placeholder="MENSAJE" required></textarea><br> 
+            <input type="submit" value="ENVIAR MENSAJE">
+        </form>        
+    </div>
+    <div class="footer">
+        <div class="column">
+            <h3>DIRECCIÓN</h3>
+            <p>Calle del sol, 123, Ciudad Encantada</p>
+        </div>
+        <div class="column">
+            <h3>HORARIOS</h3>
+            <p>Lunes a jueves: 10:00 AM - 11:00 PM</p>
+            <p>Viernes a Domingo: 11:00 AM - 02:00 AM</p>
+        </div>
+        <div class="column">
+            <h3>INFORMACIÓN DE CONTACTO</h3>
+            <p>Teléfono: +1-555-789-1234</p>
+            <p>Correo electrónico: info@bohemiarestaurant.com</p>
+        </div>
+    </div>
+</body>
+</html>
